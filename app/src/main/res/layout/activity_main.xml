@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <Button
+        android:id="@+id/bron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fio"
+        android:layout_centerHorizontal="true"
+        android:text="Бронировать билет">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bron"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_alignRight="@id/bron"
+        android:layout_alignLeft="@id/bron"
+        android:text="Проверить бронь"
+        android:onClick="OnClick"
+        >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-172dp"
+        android:text="Введите ваши ФИО и выберите желаемую опцию"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/fio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="444dp"
+        android:text="Используя эту программу вы соглашаетесь на сбор и публикацию ваших персональных данных" />
+
+</RelativeLayout>
